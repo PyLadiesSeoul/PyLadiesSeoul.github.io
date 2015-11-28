@@ -1,1 +1,1 @@
-# append-self.github.io
+http://pyladiesseoul.github.io
