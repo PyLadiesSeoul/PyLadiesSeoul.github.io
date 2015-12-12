@@ -1,0 +1,1 @@
+var matchHeight=function(a,b,c){"use strict";void 0===c&&(c=!1);var d,e,f,g,h,i=[],j=[];for(d=0;d<a.length;d++)f=Math.floor(d/b),void 0===i[f]&&(i[f]=[]),i[f].push(a[d]);for(d in i){h=0;for(e in i[d])g=$(i[d][e]).height(),h=Math.max(h,g);j.push(h),c||$(i[d]).height(h)}return j};

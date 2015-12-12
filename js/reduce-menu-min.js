@@ -1,0 +1,1 @@
+!function(a){"use strict";function b(){a("#mainMenu").addClass("scroll")}function c(){a("#mainMenu").removeClass("scroll")}a(window).on("scroll",function(){a(window).scrollTop()>81?b():c()})}(jQuery);
