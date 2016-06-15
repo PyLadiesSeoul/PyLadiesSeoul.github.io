@@ -61,8 +61,8 @@
     <section class="background-white color-black" data-control="class" data-class-prefix style="position: relative;">
         <div class="container">
             <h1 class="text-center x-large">Pyladies Seoul?</h1>
-            <p class="lead text-center"> Pyladies는 좀더 많은 여성분들이 Python을 접하고, 나아가 오픈소스에 기여할 수 있도록 도움을 드리기 위한 국제 모임입니다. 우리의 목적은 Python 커뮤니티의 다양성을 배가 시키기 위해 교육하고, 도와주고, 컨퍼런스에 참가하며, 이벤트를 여는 것입니다. 누구라도 Python에 관심있으시다면 와서 참여하세요. 참여는 온라인, 오프라인, 깃헙 커밋 한줄, 혹은 디자인 작업 등 많은 방법으로 가능합니다. 그것이 더 많은 사람들이 Python에 흥미 가지게 할 수 있을 것 같으면 됩니다. 
-            </p>
+            <p class="lead text-center word-break-all"> Pyladies는 좀더 많은 여성분들이 Python을 접하고, 나아가 오픈소스에 기여할 수 있도록 도움을 드리기 위한 국제 모임입니다. 우리의 목적은 Python 커뮤니티의 다양성을 배가하기 위해 교육하고, 도와주고, 컨퍼런스에 참가하며, 이벤트를 여는 것입니다. 누구라도 Python에 관심있으시다면 와서 참여하세요. 참여는 온라인, 오프라인, 깃헙 커밋 한줄, 혹은 디자인 작업 등 많은 방법으로 가능합니다. 그것이 더 많은 사람들이 Python에 흥미 가지게 할 수 있을 것 같으면 됩니다. 
+            </p> 
             <p> 
             We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
             PyLadies also aims to provide a friendly support network for women and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!</p>      
@@ -355,7 +355,8 @@
     <script src="js/responsive-calendar.js"></script>
     <script src="libs/lightbox/js/lightbox-2.6.min.js"></script>
     <script src="js/reduce-menu.js"></script>
-    <script src="js/match-height.js"></script>
+		<script src="js/match-height.js"></script>
+		<script src="js/jquery.word-break-keep-all.min.js"></script>
 
     <script type="text/javascript">
 
@@ -370,7 +371,11 @@
           matchHeight($('.info-thumbnail .caption .description'), 3);
         }
       });
-    });
+		});
+
+		$(document).ready(function(){
+		  $('.word-break-all').wordBreakKeepAll();
+		});
     </script>
   </body>
 </html>
